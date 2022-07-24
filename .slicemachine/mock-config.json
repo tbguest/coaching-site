@@ -44,7 +44,15 @@
     },
     "RetreatCards": {
       "default": {
-        "primary": {}
+        "primary": {},
+        "items": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
     },
     "CallToAction": {

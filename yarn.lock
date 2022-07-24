@@ -1181,6 +1181,14 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@prismicio/client@^6.4.3":
+  version "6.6.2"
+  resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-6.6.2.tgz#031275aebbe791bc83d2a821eb3944b16a5f82e0"
+  integrity sha512-VVI7/frKmnO4UGIi67gYp2t3aTe6nFOY527wn8nfL0TjPrYbDxdPEcC7Rfhbio7F5hfk0ABbqq1Qd0rXskKuNA==
+  dependencies:
+    "@prismicio/helpers" "^2.3.1"
+    "@prismicio/types" "^0.1.29"
+
 "@prismicio/client@^6.6.1":
   version "6.6.1"
   resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-6.6.1.tgz#087547a7d3283906a0d4cf7ea417e756fdc9b8eb"
@@ -1189,7 +1197,7 @@
     "@prismicio/helpers" "^2.3.1"
     "@prismicio/types" "^0.1.29"
 
-"@prismicio/helpers@^2.3.1", "@prismicio/helpers@^2.3.2":
+"@prismicio/helpers@^2.3.0", "@prismicio/helpers@^2.3.1", "@prismicio/helpers@^2.3.2":
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@prismicio/helpers/-/helpers-2.3.2.tgz#602e3f2ab432ecbc91b2485e2b9743ebc94fee48"
   integrity sha512-7FyvybtzvqSvFrDL/Dhb91ADrgwhWaNBA8svX/xs3BrARpGicdNBLiy8WBMM3+pD13tLFi8AxOr5563ORO+siw==
@@ -1198,6 +1206,26 @@
     "@prismicio/types" "^0.2.0"
     escape-html "^1.0.3"
     imgix-url-builder "^0.0.3"
+
+"@prismicio/next@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@prismicio/next/-/next-0.1.3.tgz#4505e7e8554ac3151742fbab08b8675c994e67c7"
+  integrity sha512-93Etxcn5Fd/hs5pREuu753M9k3Xe8qjd9ZcTyhq++vvfKadPP+iQdoP1gZD2kNlRaP1cUk3ms/NigqHfpXkn6w==
+  dependencies:
+    "@prismicio/client" "^6.4.3"
+    "@prismicio/helpers" "^2.3.0"
+    "@prismicio/react" "^2.4.0"
+    "@prismicio/types" "^0.1.27"
+    eslint-plugin-react "^7.30.0"
+    eslint-plugin-react-hooks "^4.5.0"
+
+"@prismicio/react@^2.4.0":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@prismicio/react/-/react-2.4.3.tgz#d8ddbd26053a18fbab04ba685ad63fc64281e537"
+  integrity sha512-HedWPdxchfjYhiHQxsBbN++hsjXk0t3LJ58K7ISIkogv09MdOC2q26d4XFoEyew8EL/EJ4h/fT7FaekFv0Azfg==
+  dependencies:
+    "@prismicio/helpers" "^2.3.1"
+    "@prismicio/richtext" "^2.0.1"
 
 "@prismicio/react@^2.4.2":
   version "2.4.2"
@@ -2860,6 +2888,26 @@ eslint-plugin-react@^7.29.4:
   version "7.30.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.30.0.tgz#8e7b1b2934b8426ac067a0febade1b13bd7064e3"
   integrity sha512-RgwH7hjW48BleKsYyHK5vUAvxtE9SMPDKmcPRQgtRCYaZA0XQPt5FSkrU3nhz5ifzMZcA8opwmRJ2cmOO8tr5A==
+  dependencies:
+    array-includes "^3.1.5"
+    array.prototype.flatmap "^1.3.0"
+    doctrine "^2.1.0"
+    estraverse "^5.3.0"
+    jsx-ast-utils "^2.4.1 || ^3.0.0"
+    minimatch "^3.1.2"
+    object.entries "^1.1.5"
+    object.fromentries "^2.0.5"
+    object.hasown "^1.1.1"
+    object.values "^1.1.5"
+    prop-types "^15.8.1"
+    resolve "^2.0.0-next.3"
+    semver "^6.3.0"
+    string.prototype.matchall "^4.0.7"
+
+eslint-plugin-react@^7.30.0:
+  version "7.30.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.30.1.tgz#2be4ab23ce09b5949c6631413ba64b2810fd3e22"
+  integrity sha512-NbEvI9jtqO46yJA3wcRF9Mo0lF9T/jhdHqhCHXiXtD+Zcb98812wvokjWpU7Q4QH5edo6dmqrukxVvWWXHlsUg==
   dependencies:
     array-includes "^3.1.5"
     array.prototype.flatmap "^1.3.0"

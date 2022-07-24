@@ -12,10 +12,17 @@
       "description": "RetreatCards",
       "primary": {},
       "items": {
-        "name": {
+        "title": {
           "type": "Text",
           "config": {
-            "label": "Name",
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Subtitle",
             "placeholder": ""
           }
         },
@@ -25,7 +32,7 @@
             "label": "Description",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
         "link": {
@@ -34,6 +41,14 @@
             "label": "Link",
             "placeholder": "",
             "select": null
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       },

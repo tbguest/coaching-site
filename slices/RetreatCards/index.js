@@ -1,31 +1,43 @@
-import { PrismicRichText } from "@prismicio/react";
-import React from "react";
+import { PrismicRichText, PrismicLink } from "@prismicio/react";
+import styles from "./RetreatCards.module.css";
+import Image from "next/image";
+import { imageLoader } from "../../prismicio";
+import Link from "next/link";
+import { TiArrowRight } from "react-icons/ti";
 
-const RetreatCards = ({ slice }) => (
-  <section>
-    <span className="title">
-      {slice.primary.title ? (
-        <PrismicRichText render={slice.primary.title} />
-      ) : (
-        <h2>Template slice, update me!</h2>
-      )}
-    </span>
-    {slice.primary.description ? (
-      <PrismicRichText render={slice.primary.description} />
-    ) : (
-      <p>start by editing this slice from inside Slice Machine!</p>
-    )}
-    <style jsx>{`
-      section {
-        max-width: 600px;
-        margin: 4em auto;
-        text-align: center;
-      }
-      .title {
-        color: #8592e0;
-      }
-    `}</style>
-  </section>
-);
+const RetreatCards = ({ slice }) => {
+  return (
+    <section className={styles.grid}>
+      {slice.items.map((item) => (
+        <div className={styles.card} key={item.title}>
+          <div className={styles.image_wrapper}>
+            <Image
+              loader={imageLoader}
+              width={250}
+              height={250}
+              layout="responsive"
+              src={item.image.url}
+              alt={item.image.alt}
+              className={styles.image}
+            />
+          </div>
+          <div className={styles.content}>
+            <h2>{item.title}</h2>
+            <h3>{item.subtitle}</h3>
+            <PrismicRichText field={item.description} />
+            <span className={styles.link}>
+              <Link href="/contact">
+                <a>
+                  Details
+                  <TiArrowRight className={styles.icon} />
+                </a>
+              </Link>
+            </span>
+          </div>
+        </div>
+      ))}
+    </section>
+  );
+};
 
 export default RetreatCards;
