@@ -223,10 +223,9 @@
   max-width: var(--content-max-width-twocolumn);
   display: grid;
   grid-template: auto 1fr / 1fr;
-  gap: 60px;
+  gap: var(--gutter);
   margin-left: var(--gutter);
   margin-right: var(--gutter);
-  /* margin-top: 3rem; */
 }
 
 .headings {
@@ -244,9 +243,8 @@
     max-width: var(--content-max-width-twocolumn);
     display: grid;
     grid-template: 1fr / 55% auto;
-    gap: 60px;
+    gap: var(--gutter);
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 3rem; */
   }
 }
