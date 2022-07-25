@@ -14,14 +14,6 @@
         }
       }
     },
-    "retreatevent": {
-      "description": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      }
-    },
     "retreat-page": {
       "contentMain": {
         "config": {
