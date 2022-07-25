@@ -22,9 +22,10 @@ export default function Coaching({ page }) {
     <div className={styles.container}>
       <div className={styles.banner_container}>
         <Image
+          loader={imageLoader}
           layout="fill"
-          src={"/images/compressed/surf.jpg"}
-          alt={"Silouetted person with a surfboard by the sea"}
+          src={page.data.bannerImage.url}
+          alt={page.data.bannerImage.alt}
           className={styles.banner_image_justify_center_left}
           priority
         />

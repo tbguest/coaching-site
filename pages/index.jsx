@@ -25,7 +25,7 @@ export async function getStaticProps() {
 export default function Home({ page }) {
   return (
     <div className={styles.container}>
-      <Splash />
+      <Splash page={page} />
       <div className={styles.content_container}>
         <div className={styles.welcome_content}>
           <h1>

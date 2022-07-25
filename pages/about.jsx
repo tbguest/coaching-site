@@ -23,13 +23,12 @@ export default function About({ page }) {
     <div className={styles.container}>
       <div className={styles.banner_container}>
         <Image
+          loader={imageLoader}
           layout="fill"
-          src={"/images/compressed/longboard.jpg"}
-          alt={
-            "Person sitting on a long surfboard in green, calm water, viewed from above"
-          }
-          priority
+          src={page.data.bannerImage.url}
+          alt={page.data.bannerImage.alt}
           className={styles.banner_image_justify_center}
+          priority
         />
       </div>{" "}
       <div className={styles.content_title}>

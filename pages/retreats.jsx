@@ -1,9 +1,6 @@
 import { SliceZone } from "@prismicio/react";
-import classNames from "classnames";
 import Image from "next/image";
-import Link from "next/link";
-import { GiCurledLeaf } from "react-icons/gi";
-import { createClient } from "../prismicio";
+import { createClient, imageLoader } from "../prismicio";
 import { components } from "../slices";
 import styles from "../styles/Page.module.css";
 
@@ -25,11 +22,10 @@ export default function Retreats({ page }) {
     <div className={styles.container}>
       <div className={styles.banner_container}>
         <Image
+          loader={imageLoader}
           layout="fill"
-          src={"/images/compressed/meadow.jpg"}
-          alt={
-            "Green grassy meadow and several buildings on a hill overlooking the sea"
-          }
+          src={page.data.bannerImage.url}
+          alt={page.data.bannerImage.alt}
           className={styles.banner_image_justify_left}
           priority
         />

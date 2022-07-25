@@ -6,7 +6,6 @@ import Link from "next/link";
 import { TiArrowRight } from "react-icons/ti";
 
 const RetreatCards = ({ slice }) => {
-  console.log("slice", slice);
   return (
     <section className={styles.grid}>
       {slice.items.map((item) => (
