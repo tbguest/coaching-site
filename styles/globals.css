@@ -73,8 +73,10 @@ button {
   --content-max-width: 54rem;
   --content-max-width-twocolumn: 64rem;
   --footer-height: 7rem;
-  --color-primary: rgb(70, 130, 180);
-  --color-primary-hover: #5093c9;
+  /* --color-primary: rgb(70, 130, 180); */
+  /* --color-primary-hover: #5093c9; */
+  --color-primary: rgb(37, 110, 170);
+  --color-primary-hover: rgb(49, 127, 190);
   --color-secondary: #ffeccb;
   --border-radius: 4px;
   --grey: #363636;

@@ -1,19 +1,28 @@
 {
-  "id": "35ab51f3-b6eb-451f-9f62-56230bba7e99",
-  "uid": "voluptatum-nulla-quia",
+  "id": "a5fb91e4-6e14-4d7e-a358-7f8b810b505b",
+  "uid": "dolor-placeat-et",
   "type": "page",
   "data": {
+    "bannerImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+    },
     "title": [
       {
         "type": "paragraph",
-        "text": "Reprehenderit irure velit proident veniam sint enim reprehenderit labore Lorem elit ex ullamco laboris ex. Ea deserunt est adipisicing ut velit laborum aliqua aliqua ipsum ipsum nostrud quis sunt. Commodo labore mollit enim dolor enim irure non ut laboris aute duis dolore irure voluptate.",
+        "text": "Quis ut sit commodo. Amet non pariatur in duis aliqua in ea cillum elit consectetur ea fugiat. Dolore culpa cupidatat adipisicing.",
         "spans": []
       }
     ],
     "contentMain": [
       {
         "type": "paragraph",
-        "text": "Labore sint laboris cillum anim enim pariatur ea ullamco. Excepteur elit commodo dolor sunt id esse excepteur. Do mollit ea fugiat minim id esse eu.",
+        "text": "Nisi veniam adipisicing eu aliquip. Dolore sint irure cupidatat velit quis aliquip ea aliqua amet eu reprehenderit.",
         "spans": []
       }
     ],
@@ -24,12 +33,12 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
     },
     "contentAside": [
       {
         "type": "paragraph",
-        "text": "Reprehenderit ex sit ut excepteur sunt ut irure. Anim duis cillum commodo adipisicing culpa minim officia. Esse qui exercitation id nisi ea deserunt ea ad incididunt aute deserunt incididunt labore mollit eu.",
+        "text": "Ut nisi esse et reprehenderit quis proident anim eu sint mollit est.",
         "spans": []
       }
     ]

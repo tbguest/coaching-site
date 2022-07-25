@@ -27,6 +27,20 @@
           "blocks": 1
         }
       }
+    },
+    "retreat-page": {
+      "contentMain": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "contentAside": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
     }
   },
   "slices": {

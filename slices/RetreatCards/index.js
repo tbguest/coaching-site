@@ -6,6 +6,7 @@ import Link from "next/link";
 import { TiArrowRight } from "react-icons/ti";
 
 const RetreatCards = ({ slice }) => {
+  console.log("slice", slice);
   return (
     <section className={styles.grid}>
       {slice.items.map((item) => (
@@ -26,7 +27,7 @@ const RetreatCards = ({ slice }) => {
             <h3>{item.subtitle}</h3>
             <PrismicRichText field={item.description} />
             <span className={styles.link}>
-              <Link href="/contact">
+              <Link href={`/retreats/${item.link.uid}`}>
                 <a>
                   Details
                   <TiArrowRight className={styles.icon} />

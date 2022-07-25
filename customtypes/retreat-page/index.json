@@ -1,31 +1,51 @@
 {
-  "id": "page",
-  "label": "Page",
+  "id": "retreat-page",
+  "label": "Retreat Page",
   "repeatable": true,
   "status": true,
   "json": {
     "Main": {
-      "bannerImage": {
-        "type": "Image",
+      "uid": {
+        "type": "UID",
         "config": {
-          "label": "Banner Image",
-          "constraint": {},
-          "thumbnails": []
+          "label": "Uid",
+          "placeholder": ""
         }
       },
       "title": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Title",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,heading1"
+          "placeholder": ""
+        }
+      },
+      "subtitle": {
+        "type": "Text",
+        "config": {
+          "label": "Subtitle",
+          "placeholder": ""
+        }
+      },
+      "dates": {
+        "type": "Text",
+        "config": {
+          "label": "Dates",
+          "placeholder": ""
         }
       },
       "contentMain": {
         "type": "StructuredText",
         "config": {
           "label": "Content Main",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "contentAside": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Content Aside",
           "placeholder": "",
           "allowTargetBlank": true,
           "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -39,34 +59,15 @@
           "thumbnails": []
         }
       },
-      "contentAside": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Content Aside",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-        }
-      },
-      "uid": {
-        "type": "UID",
-        "config": {
-          "label": "Uid",
-          "placeholder": ""
-        }
-      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "text": {
-              "type": "SharedSlice"
-            },
-            "retreat_cards": {
-              "type": "SharedSlice"
-            },
             "call_to_action": {
+              "type": "SharedSlice"
+            },
+            "text": {
               "type": "SharedSlice"
             }
           }
