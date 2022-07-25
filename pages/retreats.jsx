@@ -28,16 +28,18 @@ export default function Retreats({ page }) {
           priority
         />
       </div>
-      <div className={styles.content_title}>
-        <h1>
-          <PrismicText field={page.data.title} />
-        </h1>
-        <hr className={styles.hr} />
+      <div className={styles.content_container}>
+        <div className={styles.content_title}>
+          <h1>
+            <PrismicText field={page.data.title} />
+          </h1>
+          <hr className={styles.hr} />
+        </div>
+        <section className={styles.page_content}>
+          <PrismicRichText field={page.data.contentMain} />
+        </section>
+        <SliceZone slices={page.data.slices} components={components} />
       </div>
-      <div className={styles.page_content}>
-        <PrismicRichText field={page.data.contentMain} />
-      </div>
-      <SliceZone slices={page.data.slices} components={components} />
     </div>
   );
 }

@@ -34,31 +34,33 @@ export default function Accommodations({ page }) {
           priority
         />
       </div>
-      <div className={styles.content_title}>
-        <h1>
-          <PrismicText field={page.data.title} />
-        </h1>
-        <hr className={styles.hr} />
-      </div>
-      <div className={styles.content}>
-        <div className={styles.content_text}>
-          <PrismicRichText field={page.data.contentMain} />
+      <div className={styles.content_container}>
+        <div className={styles.content_title}>
+          <h1>
+            <PrismicText field={page.data.title} />
+          </h1>
+          <hr className={styles.hr} />
         </div>
-        <div className={styles.content_image}>
-          <Image
-            loader={imageLoader}
-            width={page.data.image.dimensions.width}
-            height={page.data.image.dimensions.height}
-            src={page.data.image.url}
-            alt={page.data.image.alt}
-            className={styles.image}
-          />
-          <em className={styles.italics}>
-            <PrismicRichText field={page.data.contentAside} />
-          </em>
+        <div className={styles.content}>
+          <section className={styles.content_text}>
+            <PrismicRichText field={page.data.contentMain} />
+          </section>
+          <aside className={styles.content_image}>
+            <Image
+              loader={imageLoader}
+              width={page.data.image.dimensions.width}
+              height={page.data.image.dimensions.height}
+              src={page.data.image.url}
+              alt={page.data.image.alt}
+              className={styles.image}
+            />
+            <em className={styles.italics}>
+              <PrismicRichText field={page.data.contentAside} />
+            </em>
+          </aside>
         </div>
+        <SliceZone slices={page.data.slices} components={components} />
       </div>
-      <SliceZone slices={page.data.slices} components={components} />
     </div>
   );
 }

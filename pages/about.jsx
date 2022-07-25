@@ -30,45 +30,49 @@ export default function About({ page }) {
           className={styles.banner_image_justify_center}
           priority
         />
-      </div>{" "}
-      <div className={styles.content_title}>
-        <h1>
-          <PrismicText field={page.data.title} />
-        </h1>
-        <hr className={styles.hr} />
       </div>
-      <div className={styles.page_content}>
-        <PrismicRichText field={page.data.contentMain} />
-      </div>
-      <div className={styles.page_grid}>
-        <div className={styles.image}>
-          <Image
-            loader={imageLoader}
-            width={page.data.image.dimensions.width}
-            height={page.data.image.dimensions.height}
-            src={page.data.image.url}
-            alt={page.data.image.alt}
-            className={styles.image}
-          />
+      <div className={styles.content_container}>
+        <div className={styles.content_title}>
+          <h1>
+            <PrismicText field={page.data.title} />
+          </h1>
+          <hr className={styles.hr} />
         </div>
-        <div className={styles.page_grid_text}>
-          <div className={styles.fixed_layout}>
-            <p>The values that guide my life</p>
-            <p className={styles.stylized}>Vitality</p>
-            <p className={classNames(styles.inset1, styles.stylized)}>
-              Connection
-            </p>
-            <p className={classNames(styles.inset2, styles.stylized)}>Growth</p>
-            <p className={classNames(styles.inset3, styles.stylized)}>
-              Creativity
-            </p>
-            <p className={classNames(styles.inset4, styles.stylized)}>
-              Living in harmony with Nature
-            </p>
+        <section className={styles.page_content}>
+          <PrismicRichText field={page.data.contentMain} />
+        </section>
+        <div className={styles.page_grid}>
+          <div className={styles.image}>
+            <Image
+              loader={imageLoader}
+              width={page.data.image.dimensions.width}
+              height={page.data.image.dimensions.height}
+              src={page.data.image.url}
+              alt={page.data.image.alt}
+              className={styles.image}
+            />
+          </div>
+          <div className={styles.page_grid_text}>
+            <div className={styles.fixed_layout}>
+              <p>The values that guide my life</p>
+              <p className={styles.stylized}>Vitality</p>
+              <p className={classNames(styles.inset1, styles.stylized)}>
+                Connection
+              </p>
+              <p className={classNames(styles.inset2, styles.stylized)}>
+                Growth
+              </p>
+              <p className={classNames(styles.inset3, styles.stylized)}>
+                Creativity
+              </p>
+              <p className={classNames(styles.inset4, styles.stylized)}>
+                Living in harmony with Nature
+              </p>
+            </div>
           </div>
         </div>
+        <SliceZone slices={page.data.slices} components={components} />
       </div>
-      <SliceZone slices={page.data.slices} components={components} />
     </div>
   );
 }
