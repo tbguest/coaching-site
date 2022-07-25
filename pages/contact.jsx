@@ -1,7 +1,7 @@
 import styles from "../styles/Page.module.css";
 import { ContactForm } from "../components/ContactForm";
 import Image from "next/image";
-import { PrismicRichText } from "@prismicio/react";
+import { PrismicText, PrismicRichText } from "@prismicio/react";
 import { createClient, imageLoader } from "../prismicio";
 
 export async function getStaticProps() {
@@ -28,7 +28,9 @@ export default function Contact({ page }) {
         />
       </div>
       <div className={styles.content_title}>
-        <h1>Contact</h1>
+        <h1>
+          <PrismicText field={page.data.title} />
+        </h1>
         <hr className={styles.hr} />
         <span className={styles.center}>
           <PrismicRichText field={page.data.contentMain} />

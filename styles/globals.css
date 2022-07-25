@@ -84,4 +84,5 @@ button {
   --font-color-primary: #464646;
   --img-header-height: 32rem;
   --inset-text: 2rem;
+  --gutter: 24px;
 }

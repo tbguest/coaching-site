@@ -14,7 +14,6 @@ export default function Retreat({ page }) {
               <h1>{page.data.title}</h1>
               <h2>{page.data.subtitle}</h2>
               <h3>{page.data.dates}</h3>
-              {/* <hr className={styles.hr} /> */}
             </div>
             <PrismicRichText field={page.data.contentMain} />
           </section>
@@ -44,7 +43,6 @@ export async function getStaticProps(context) {
   const client = createClient();
 
   // Page document from the CMS.
-  // const uid = context.params.path?.[context.params.path?.length - 1] || {};
   const uid = context.params.path;
   const page = await client.getByUID("retreat-page", uid);
 
@@ -55,19 +53,10 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   const client = createClient();
-
-  // Page documents from the CMS.
   const pages = await client.getAllByType("retreat-page");
-
-  const pp = pages.map((page) => ({
-    params: {
-      path: page.uid,
-    },
-  }));
 
   // URL paths for each Page document from the CMS.
   return {
-    // paths: pages.map((page) => prismicH.asLink(page, retreatLinkResolver)),
     paths: pages.map((page) => ({
       params: {
         path: page.uid,

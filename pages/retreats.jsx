@@ -1,17 +1,15 @@
-import { SliceZone } from "@prismicio/react";
+import { PrismicText, PrismicRichText, SliceZone } from "@prismicio/react";
 import Image from "next/image";
 import { createClient, imageLoader } from "../prismicio";
 import { components } from "../slices";
 import styles from "../styles/Page.module.css";
 
 export async function getStaticProps() {
-  // Client used to fetch CMS content.
   const client = createClient();
 
   // Page document for our homepage from the CMS.
   const page = await client.getByUID("page", "retreats");
 
-  // Pass the homepage as prop to our page.
   return {
     props: { title: "| Retreats", description: "Retreats page", page },
   };
@@ -31,8 +29,13 @@ export default function Retreats({ page }) {
         />
       </div>
       <div className={styles.content_title}>
-        <h1>Wellness Retreats</h1>
+        <h1>
+          <PrismicText field={page.data.title} />
+        </h1>
         <hr className={styles.hr} />
+      </div>
+      <div className={styles.page_content}>
+        <PrismicRichText field={page.data.contentMain} />
       </div>
       <SliceZone slices={page.data.slices} components={components} />
     </div>
