@@ -1,9 +1,9 @@
-import { PrismicRichText, PrismicLink } from "@prismicio/react";
-import styles from "./RetreatCards.module.css";
+import { PrismicRichText } from "@prismicio/react";
 import Image from "next/image";
-import { imageLoader } from "../../prismicio";
 import Link from "next/link";
 import { TiArrowRight } from "react-icons/ti";
+import { imageLoader } from "../../prismicio";
+import styles from "./RetreatCards.module.css";
 
 const RetreatCards = ({ slice }) => {
   return (

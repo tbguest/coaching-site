@@ -1,4 +1,4 @@
-import { PrismicRichText, PrismicText, SliceZone } from "@prismicio/react";
+import { PrismicRichText, SliceZone } from "@prismicio/react";
 import { Splash } from "../components/Splash";
 import { createClient } from "../prismicio";
 import { components } from "../slices";
@@ -28,9 +28,7 @@ export default function Home({ page }) {
       <Splash page={page} />
       <div className={styles.content_container}>
         <div className={styles.welcome_content}>
-          <h1>
-            <PrismicText field={page.data.title} />
-          </h1>
+          <h1>{page.data.title}</h1>
           <hr className={styles.hr} />
           <PrismicRichText field={page.data.contentMain} />
         </div>

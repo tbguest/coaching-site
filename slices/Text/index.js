@@ -1,4 +1,4 @@
-import { PrismicText, PrismicRichText } from "@prismicio/react";
+import { PrismicRichText } from "@prismicio/react";
 import React from "react";
 import styles from "./Text.module.css";
 

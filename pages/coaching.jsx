@@ -1,4 +1,4 @@
-import { PrismicRichText, PrismicText, SliceZone } from "@prismicio/react";
+import { PrismicRichText, SliceZone } from "@prismicio/react";
 import Image from "next/image";
 import { createClient, imageLoader } from "../prismicio";
 import { components } from "../slices";
@@ -32,9 +32,7 @@ export default function Coaching({ page }) {
       </div>
       <div className={styles.content_container}>
         <div className={styles.content_title}>
-          <h1>
-            <PrismicText field={page.data.title} />
-          </h1>
+          <h1>{page.data.title}</h1>
           <hr className={styles.hr} />
         </div>
         <div className={styles.content}>
