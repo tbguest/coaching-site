@@ -52,7 +52,9 @@ export default function Accommodations({ page }) {
               alt={page.data.image.alt}
               className={styles.image}
             />
-            <PrismicRichText field={page.data.contentAside} />
+            <em className={styles.italics}>
+              <PrismicRichText field={page.data.contentAside} />
+            </em>
           </aside>
         </div>
         <SliceZone slices={page.data.slices} components={components} />

@@ -8,20 +8,20 @@
       "description": [
         {
           "type": "paragraph",
-          "text": "Incididunt nisi officia in sint dolor ex exercitation laborum incididunt dolore. Cillum labore Lorem in qui nostrud deserunt velit et aute voluptate qui consectetur. Anim ex duis ea laborum deserunt commodo deserunt nulla ea reprehenderit aliquip proident tempor.",
+          "text": "Ullamco veniam ad duis officia aliqua.",
           "spans": []
         }
       ],
       "buttonText": [
         {
           "type": "paragraph",
-          "text": "Do do eiusmod do dolor ipsum officia. Nisi sunt ad sunt laboris Lorem proident elit aliqua eu pariatur Lorem.",
+          "text": "Consectetur quis excepteur mollit reprehenderit cupidatat ut laborum elit consequat voluptate voluptate consectetur laboris. Lorem mollit irure irure incididunt esse mollit labore quis enim pariatur.",
           "spans": []
         }
       ],
       "link": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "http://google.com"
       }
     }
   }

@@ -28,38 +28,10 @@
         }
       }
     },
-    "home-page": {
-      "contentMain": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      }
-    },
-    "retreats-home-page": {
-      "contentMain": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      }
-    },
-    "about-page": {
-      "contentMain": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      }
-    },
-    "contact-page": {
-      "contentMain": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      }
-    }
+    "home-page": {},
+    "retreats-home-page": {},
+    "about-page": {},
+    "contact-page": {}
   },
   "slices": {
     "Text": {
@@ -89,20 +61,7 @@
     },
     "CallToAction": {
       "default": {
-        "primary": {
-          "description": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          },
-          "buttonText": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        }
+        "primary": {}
       }
     }
   }
