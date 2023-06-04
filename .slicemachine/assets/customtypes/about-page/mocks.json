@@ -1,0 +1,33 @@
+{
+  "id": "dc079d82-2ab0-42fc-8c39-99dd17d9b898",
+  "uid": "unde-accusamus-incidunt",
+  "type": "about-page",
+  "data": {
+    "bannerImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+    },
+    "title": "disintermediate 24/7 partnerships",
+    "contentMain": [
+      {
+        "type": "paragraph",
+        "text": "Reprehenderit irure ipsum quis non aliquip aliquip ex. Nulla anim eu amet tempor laborum incididunt laborum excepteur esse irure pariatur nulla sint labore. Proident proident cillum ex duis aute consequat labore anim non.",
+        "spans": []
+      }
+    ],
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+    }
+  }
+}

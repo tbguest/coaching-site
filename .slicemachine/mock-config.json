@@ -27,7 +27,11 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "home-page": {},
+    "retreats-home-page": {},
+    "about-page": {},
+    "contact-page": {}
   },
   "slices": {
     "Text": {

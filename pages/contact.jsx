@@ -7,7 +7,7 @@ import styles from "../styles/Page.module.css";
 export async function getStaticProps() {
   // Client used to fetch CMS content.
   const client = createClient();
-  const page = await client.getByUID("page", "contact");
+  const page = await client.getByUID("contact-page", "contact-page");
 
   return {
     props: { title: "| Contact", description: "Contact page", page },

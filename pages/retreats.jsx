@@ -8,7 +8,10 @@ export async function getStaticProps() {
   const client = createClient();
 
   // Page document for our homepage from the CMS.
-  const page = await client.getByUID("page", "retreats");
+  const page = await client.getByUID(
+    "retreats-home-page",
+    "retreats-home-page"
+  );
 
   return {
     props: { title: "| Retreats", description: "Retreats page", page },
