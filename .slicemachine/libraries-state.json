@@ -23,18 +23,18 @@
                   "type": "StructuredText",
                   "config": {
                     "label": "Description",
-                    "placeholder": "",
+                    "placeholder": "If you want to know more...",
                     "allowTargetBlank": true,
-                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                    "single": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 },
                 "buttonText": {
                   "type": "StructuredText",
                   "config": {
                     "label": "Button Text",
-                    "placeholder": "",
+                    "placeholder": "Reach Out",
                     "allowTargetBlank": true,
-                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                    "single": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 },
                 "link": {
@@ -61,20 +61,20 @@
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Ullamco veniam ad duis officia aliqua.",
+                  "text": "Incididunt nisi officia in sint dolor ex exercitation laborum incididunt dolore. Cillum labore Lorem in qui nostrud deserunt velit et aute voluptate qui consectetur. Anim ex duis ea laborum deserunt commodo deserunt nulla ea reprehenderit aliquip proident tempor.",
                   "spans": []
                 }
               ],
               "buttonText": [
                 {
                   "type": "paragraph",
-                  "text": "Consectetur quis excepteur mollit reprehenderit cupidatat ut laborum elit consequat voluptate voluptate consectetur laboris. Lorem mollit irure irure incididunt esse mollit labore quis enim pariatur.",
+                  "text": "Do do eiusmod do dolor ipsum officia. Nisi sunt ad sunt laboris Lorem proident elit aliqua eu pariatur Lorem.",
                   "spans": []
                 }
               ],
               "link": {
                 "link_type": "Web",
-                "url": "http://google.com"
+                "url": "https://slicemachine.dev"
               }
             }
           }
