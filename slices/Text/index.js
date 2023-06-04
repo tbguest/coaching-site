@@ -1,0 +1,15 @@
+import { PrismicRichText } from "@prismicio/react";
+import React from "react";
+import styles from "./Text.module.css";
+
+const Text = ({ slice }) => {
+  return (
+    <section className={styles.container}>
+      <span className={styles.text}>
+        <PrismicRichText field={slice.primary.text} />
+      </span>
+    </section>
+  );
+};
+
+export default Text;

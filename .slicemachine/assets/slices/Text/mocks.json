@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "text",
+    "items": [],
+    "primary": {
+      "text": [
+        {
+          "type": "paragraph",
+          "text": "Qui velit nisi officia consectetur voluptate quis incididunt aliqua. Sit ad sunt sint aute. Non quis sit adipisicing sunt non.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "id": "3b6229b3-9dc2-4a0f-9297-9162e90a1594",
+  "uid": "nihil-ut-aliquid",
+  "type": "retreats-home-page",
+  "data": {
+    "bannerImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+    },
+    "title": "seize synergistic vortals",
+    "contentMain": [
+      {
+        "type": "paragraph",
+        "text": "Anim proident cupidatat aute ut nostrud consectetur cupidatat non ipsum sit dolore. Esse quis nostrud commodo labore nostrud quis proident incididunt sit cupidatat eiusmod tempor est. Dolore deserunt sit ea.",
+        "spans": []
+      }
+    ]
+  }
+}

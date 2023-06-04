@@ -1,0 +1,8 @@
+.container {
+  max-width: var(--content-max-width);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 3rem;
+}

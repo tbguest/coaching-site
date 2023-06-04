@@ -1,0 +1,40 @@
+{
+  "id": "82b13880-f9c7-4082-a7f0-ecd674c59d2b",
+  "uid": "iure-ut-aut",
+  "type": "page",
+  "data": {
+    "bannerImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+    },
+    "title": "seize mission-critical infrastructures",
+    "contentMain": [
+      {
+        "type": "paragraph",
+        "text": "Quis excepteur veniam ut ut aute proident excepteur sunt sit cupidatat laborum do fugiat duis. Elit proident qui anim do ad sit nisi velit officia. Anim sint pariatur in dolore ut duis commodo culpa cillum.",
+        "spans": []
+      }
+    ],
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=900&h=500&fit=crop"
+    },
+    "contentAside": [
+      {
+        "type": "paragraph",
+        "text": "Adipisicing ad cillum id ut mollit id adipisicing excepteur non reprehenderit nulla aute do. Sint nisi consectetur occaecat nulla incididunt id et voluptate qui.",
+        "spans": []
+      }
+    ]
+  }
+}

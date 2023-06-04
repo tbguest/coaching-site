@@ -13,8 +13,9 @@
   margin-right: auto;
 }
 
-.button a {
-  color: white !important;
+.button a p {
+  color: white;
+  margin: 0;
 }
 
 .button:hover {
@@ -24,4 +25,5 @@
 .nav_anchor {
   display: inline-block;
   padding: 1rem;
+  color: white;
 }

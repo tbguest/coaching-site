@@ -1,92 +1,75 @@
-import styles from "../styles/Page.module.css";
-import Image from "next/image";
-import { NavButton } from "../components/NavButton";
+import { PrismicRichText, SliceZone } from "@prismicio/react";
 import classNames from "classnames";
+import Image from "next/image";
+import { createClient, imageLoader } from "../prismicio";
+import { components } from "../slices";
+import styles from "../styles/Page.module.css";
 
 export async function getStaticProps() {
-  return { props: { title: "| About", description: "About page" } };
+  // Client used to fetch CMS content.
+  const client = createClient();
+
+  // Page document for our homepage from the CMS.
+  const page = await client.getByUID("about-page", "about-page");
+
+  // Pass the homepage as prop to our page.
+  return {
+    props: { title: "| About", description: "About page", page },
+  };
 }
 
-export default function About() {
+export default function About({ page }) {
   return (
     <div className={styles.container}>
       <div className={styles.banner_container}>
         <Image
+          loader={imageLoader}
           layout="fill"
-          src={"/images/compressed/longboard.jpg"}
-          alt={
-            "Person sitting on a long surfboard in green, calm water, viewed from above"
-          }
-          priority
+          src={page.data.bannerImage.url}
+          alt={page.data.bannerImage.alt}
           className={styles.banner_image_justify_center}
+          priority
         />
-      </div>{" "}
-      <div className={styles.content_title}>
-        <h1>About Me</h1>
-        <hr className={styles.hr} />
       </div>
-      <div className={styles.page_content}>
-        <h2>Zenovia Ursuliak MD, PhD, FRCPC</h2>
-        <p>
-          My mission is to help people realize their greatest potential so
-          collectively we can increase the vitality and well-being on this
-          planet.
-        </p>
-
-        <p>
-          This mission drew me to the Executive Coaching program at Royal Roads
-          University in April 2022 and inspired Wild Ocean Coaching and
-          Retreats.
-        </p>
-
-        <p>
-          Since 2007 I have been a psychiatrist integrating pharmaceutical
-          approaches with lifestyle counselling, psychotherapy, and herbal
-          medicine. Training at the Centre for Mind-Body Medicine and the Bloom
-          Institute of Holistic Living and Learning has expanded my approach to
-          health.
-        </p>
-
-        <p>
-          As a physician, I facilitate on-line sessions to healthcare
-          professionals to promote connection, hope and wellbeing. As an
-          academic, I led a task force to create an organizational wellness
-          strategy for the Department of Psychiatry at Dalhousie University, and
-          chair the committee implementing this strategy.
-        </p>
-
-        <p>
-          I live with my family at Wild Ocean Lodge, an acreage immersed in
-          nature, my most precious medicine.
-        </p>
-      </div>
-      <div className={styles.page_grid}>
-        <div className={styles.image}>
-          <Image
-            width={884}
-            height={1053}
-            objectFit={"contain"}
-            src={"/images/compressed/zen.jpg"}
-            alt={"A headshot of the author"}
-          />
+      <div className={styles.content_container}>
+        <div className={styles.content_title}>
+          <h1>{page.data.title}</h1>
+          <hr className={styles.hr} />
         </div>
-        <div className={styles.page_grid_text}>
-          <div className={styles.fixed_layout}>
-            <p>The values that guide my life</p>
-            <p className={styles.stylized}>Vitality</p>
-            <p className={classNames(styles.inset1, styles.stylized)}>
-              Connection
-            </p>
-            <p className={classNames(styles.inset2, styles.stylized)}>Growth</p>
-            <p className={classNames(styles.inset3, styles.stylized)}>
-              Creativity
-            </p>
-            <p className={classNames(styles.inset4, styles.stylized)}>
-              Living in harmony with Nature
-            </p>
+        <section className={styles.page_content}>
+          <PrismicRichText field={page.data.contentMain} />
+        </section>
+        <div className={styles.page_grid}>
+          <div className={styles.image}>
+            <Image
+              loader={imageLoader}
+              width={page.data.image.dimensions.width}
+              height={page.data.image.dimensions.height}
+              src={page.data.image.url}
+              alt={page.data.image.alt}
+              className={styles.image}
+            />
           </div>
-          <NavButton page="contact">Reach out</NavButton>
+          <div className={styles.page_grid_text}>
+            <div className={styles.fixed_layout}>
+              <p>The values that guide my life</p>
+              <p className={styles.stylized}>Vitality</p>
+              <p className={classNames(styles.inset1, styles.stylized)}>
+                Connection
+              </p>
+              <p className={classNames(styles.inset2, styles.stylized)}>
+                Growth
+              </p>
+              <p className={classNames(styles.inset3, styles.stylized)}>
+                Creativity
+              </p>
+              <p className={classNames(styles.inset4, styles.stylized)}>
+                Living in harmony with Nature
+              </p>
+            </div>
+          </div>
         </div>
+        <SliceZone slices={page.data.slices} components={components} />
       </div>
     </div>
   );

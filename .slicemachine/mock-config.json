@@ -1,0 +1,68 @@
+{
+  "_cts": {
+    "page": {
+      "contentMain": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "contentAside": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "retreat-page": {
+      "contentMain": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "contentAside": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "home-page": {},
+    "retreats-home-page": {},
+    "about-page": {},
+    "contact-page": {}
+  },
+  "slices": {
+    "Text": {
+      "default": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "RetreatCards": {
+      "default": {
+        "primary": {},
+        "items": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "CallToAction": {
+      "default": {
+        "primary": {}
+      }
+    }
+  }
+}

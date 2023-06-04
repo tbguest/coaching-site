@@ -1,0 +1,33 @@
+{
+  "id": "75b6c33f-b83e-4a14-ab80-c90a42628cca",
+  "uid": "voluptate-ducimus-sint",
+  "type": "retreat-page",
+  "data": {
+    "title": "synthesize real-time relationships",
+    "subtitle": "strategize integrated initiatives",
+    "dates": "whiteboard dynamic infrastructures",
+    "contentMain": [
+      {
+        "type": "paragraph",
+        "text": "Eiusmod eiusmod laboris aliquip voluptate ipsum ex duis voluptate ea. Elit minim excepteur officia adipisicing deserunt do labore sint pariatur anim et aute anim. Id do aliquip laborum ullamco incididunt occaecat qui.",
+        "spans": []
+      }
+    ],
+    "contentAside": [
+      {
+        "type": "paragraph",
+        "text": "Et nisi ex ex commodo ullamco consectetur occaecat ipsum tempor excepteur. Dolore laboris cillum do mollit non sit esse non laboris. Ea laboris quis laboris sint ullamco ad elit.",
+        "spans": []
+      }
+    ],
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+    }
+  }
+}

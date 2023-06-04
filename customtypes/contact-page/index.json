@@ -1,0 +1,41 @@
+{
+  "id": "contact-page",
+  "label": "Contact Page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "bannerImage": {
+        "type": "Image",
+        "config": {
+          "label": "Banner Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "contentMain": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Content Main",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      }
+    }
+  }
+}
