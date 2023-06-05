@@ -50,18 +50,3 @@ export async function getServerSideProps(context) {
     props: { title: `| ${uid}`, description: "Retreats page", page },
   };
 }
-
-export async function getStaticPaths() {
-  const client = createClient();
-  const pages = await client.getAllByType("retreat-page");
-
-  // URL paths for each Page document from the CMS.
-  return {
-    paths: pages.map((page) => ({
-      params: {
-        path: page.uid,
-      },
-    })),
-    fallback: false,
-  };
-}
