@@ -4,7 +4,7 @@ import { ContactForm } from "../components/ContactForm";
 import { createClient, imageLoader } from "../prismicio";
 import styles from "../styles/Page.module.css";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   // Client used to fetch CMS content.
   const client = createClient();
   const page = await client.getByUID("contact-page", "contact-page");

@@ -4,7 +4,7 @@ import { createClient, imageLoader } from "../prismicio";
 import { components } from "../slices";
 import styles from "../styles/Page.module.css";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   // Client used to fetch CMS content.
   const client = createClient();
 

@@ -39,7 +39,7 @@ export default function Retreat({ page }) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const client = createClient();
 
   // Page document from the CMS.
