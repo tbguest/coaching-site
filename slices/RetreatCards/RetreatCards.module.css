@@ -28,6 +28,7 @@
   height: 100%;
   width: 100%;
   border-radius: var(--border-radius);
+  object-fit: cover;
 }
 
 .content {
@@ -71,6 +72,7 @@
 
   .image_wrapper {
     width: 40%;
+    object-fit: cover;
   }
 
   .content {
