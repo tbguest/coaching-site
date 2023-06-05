@@ -48,7 +48,6 @@ const ContactForm = ({ children }) => {
     }
 
     setErrors({ ...tempErrors });
-    console.log("errors", errors);
     return isValid;
   };
 
@@ -74,11 +73,8 @@ const ContactForm = ({ children }) => {
         method: "POST",
       });
 
-      console.log("res", res);
-
       const { error } = await res.json();
       if (error) {
-        console.log(error);
         setShowSuccessMessage(false);
         setShowFailureMessage(true);
         setButtonText("Send");
@@ -88,7 +84,6 @@ const ContactForm = ({ children }) => {
       setShowFailureMessage(false);
       setButtonText("Send");
     }
-    console.log(fullname, email, subject, message);
     handleFormStateReset();
   };
 

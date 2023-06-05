@@ -48,9 +48,7 @@ export default function Coaching({ page }) {
               alt={page.data.image.alt}
               className={styles.image}
             />
-            <em className={styles.italics}>
-              <PrismicRichText field={page.data.contentAside} />
-            </em>
+            <PrismicRichText field={page.data.contentAside} />
           </aside>
         </div>
         <SliceZone slices={page.data.slices} components={components} />

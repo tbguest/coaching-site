@@ -27,9 +27,7 @@ export default function Retreat({ page }) {
                 alt={page.data.image.alt}
                 className={styles.image}
               />
-              <em className={styles.italics}>
-                <PrismicRichText field={page.data.contentAside} />
-              </em>
+              <PrismicRichText field={page.data.contentAside} />
             </aside>
           </div>
         </div>
