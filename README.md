@@ -1,6 +1,6 @@
 # wildoceancoaching.ca
 
-Coaching business landing page for a freelance client.
+Landing page for a freelance client.
 
 - Built with Next.js
 - All content managed by the client in Prismic CMS
